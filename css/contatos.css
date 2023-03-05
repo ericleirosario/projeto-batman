@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-color: black;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+li  a {
+    color: aliceblue;
+    font-size: 19px;
+    transition: .5s;    
+}
+
+li a:hover {
+    color: #216170;
+}
+
+.contatcts-container {
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;    
+}
+
+h1 {
+    font-size: 50px;
+    padding: 20px 0;
+}
+
+.content {
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.info-contacts {
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.telefone {
+    margin-bottom: 30px;
+}
+
+.localiza {
+    margin-bottom: 30px;
+}
+
+.icon-socias {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+i {
+    color: #fff;
+    font-size: 22px;
+    margin: 10px 10px 6px 0;
+    transition: .2s;
+}
+
+i:hover {
+    color: #216170;
+    transform: scale(1.08);
+}
+
+.form-contatcts {
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffff00;
+    border-radius: 0 70px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #216170;
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 0;
+}
+
+label {
+    color: #216170;
+    font-size: 12px;
+}
+
+input {
+    width: 350px;
+    height: 30px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 6px;
+    outline: none;
+    border: none;
+}
+
+#mensagem {
+    max-width: 350px;    
+    max-height: 100px;    
+    padding: 6px;
+    outline: none;
+    border: none;
+}      
+
+button {
+    margin-top: 10px;    
+    padding: 8px 18px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid #216170;
+    color: #216170;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .6s;       
+}
+
+button:hover {
+    background-color: #216170;
+    color: #fff;
+    transform: scale(1.04);
+}
+
+footer {
+    height: 250px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+span {
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-nav {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .footer-nav {
+        display: block;
+        margin-top: 30px;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contatcts-container {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 130px;        
+    }
+
+    .info-contacts {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;       
+    }
+
+    .form-contatcts {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;       
+    }
+
+    footer {
+        margin-top: 180px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contatcts-container {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+    }
+    .form-contatcts {
+        max-width: 400px;
+    }       
+}

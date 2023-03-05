@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-color: black;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+li  a {
+    color: aliceblue;
+    font-size: 19px;
+    transition: .5s;    
+}
+
+li a:hover {
+    color: #216170;
+}
+
+.fotos-container {
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 0 0;    
+}
+
+h1 {
+    font-size: 50px;
+    padding: 20px 0;
+}
+
+.content {
+    width: 80%;    
+    display: flex;
+    justify-content: center;    
+}
+
+.fotos-cards-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+}
+
+.cards-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.card {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    border: 2px solid #216170;
+    transition: 1s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    border: 2px solid #ffff00;    
+}
+
+.banner1 {
+    background-image: url(https://br.web.img3.acsta.net/r_1920_1080/pictures/22/03/02/19/26/3666027.jpg);
+}
+
+.banner2 {
+    background-image: url(https://br.web.img3.acsta.net/r_1920_1080/pictures/22/01/20/10/38/5630578.jpg);
+}
+
+.banner3 {
+    background-image: url(https://br.web.img3.acsta.net/r_1920_1080/pictures/22/01/20/10/39/4327542.jpg);
+}
+
+.banner4 {
+    background-image: url(https://br.web.img2.acsta.net/r_1920_1080/pictures/21/11/10/17/39/5549864.jpg);
+}
+
+.banner5 {
+    background-image: url(https://br.web.img3.acsta.net/r_1920_1080/pictures/22/02/16/11/13/5146810.jpg);
+}
+
+.banner6 {
+    background-image: url(https://br.web.img2.acsta.net/r_1920_1080/pictures/22/02/16/11/13/1976700.jpg);
+}
+
+.banner7 {
+    background-image: url(https://br.web.img3.acsta.net/r_1920_1080/pictures/22/02/16/11/13/1962659.jpg);
+}
+
+.banner8 {
+    background-image: url(https://br.web.img3.acsta.net/r_1920_1080/pictures/22/02/16/11/13/1918976.jpg);
+}
+
+.banner9 {
+    background-image: url(https://br.web.img3.acsta.net/r_1920_1080/pictures/22/02/16/11/13/1901815.jpg);
+}
+
+.banner10 {
+    background-image: url(https://br.web.img2.acsta.net/r_1920_1080/pictures/22/02/16/11/13/1886214.jpg);
+}
+
+.banner11 {
+    background-image: url(https://br.web.img3.acsta.net/r_1920_1080/pictures/22/02/16/11/13/1858132.jpg);
+}
+
+.banner12 {
+    background-image: url(https://br.web.img2.acsta.net/r_1920_1080/pictures/22/02/16/11/13/1839411.jpg);
+}
+
+footer {
+    height: 250px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+span {
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-nav {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .footer-nav {
+        display: block;
+        margin-top: 30px;        
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .cards-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
